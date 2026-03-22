@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+* {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        body {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            line-height: 1.6;
+
+            color: #333;
+
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+            padding: 20px;
+
+        }
+
+
+
+        .container {
+
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            background: white;
+
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+        }
+
+
+
+        /* Header Section */
+
+        header {
+
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            color: white;
+
+            padding: 40px 30px;
+
+            text-align: center;
+
+        }
+
+
+
+        header h1 {
+
+            font-size: 2.5em;
+
+            margin-bottom: 10px;
+
+            font-weight: 700;
+
+        }
+
+
+
+        header .subtitle {
+
+            font-size: 1.2em;
+
+            font-weight: 300;
+
+            opacity: 0.95;
+
+            margin-bottom: 20px;
+
+        }
+
+
+
+        .contact-info {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 30px;
+
+            flex-wrap: wrap;
+
+            font-size: 0.95em;
+
+            margin-top: 15px;
+
+        }
+
+
+
+        .contact-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+        }
+
+
+
+        /* Main Content */
+
+        main {
+
+            padding: 40px 30px;
+
+        }
+
+
+
+        section {
+
+            margin-bottom: 35px;
+
+        }
+
+
+
+        section h2 {
+
+            font-size: 1.8em;
+
+            color: #667eea;
+
+            border-bottom: 3px solid #667eea;
+
+            padding-bottom: 10px;
+
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+
+
+        /* About Section */
+
+        .about-text {
+
+            font-size: 1em;
+
+            line-height: 1.8;
+
+            color: #555;
+
+            padding: 15px 0;
+
+        }
+
+
+
+        /* Education */
+
+        .education-item {
+
+            margin-bottom: 25px;
+
+            padding-left: 20px;
+
+            border-left: 4px solid #667eea;
+
+        }
+
+
+
+        .education-item h3 {
+
+            font-size: 1.2em;
+
+            color: #333;
+
+            margin-bottom: 5px;
+
+        }
+
+
+
+        .education-item .duration {
+
+            color: #667eea;
+
+            font-weight: 600;
+
+            font-size: 0.95em;
+
+            margin-bottom: 5px;
+
+        }
+
+
+
+        .education-item .status {
+
+            color: #666;
+
+            font-size: 0.95em;
+
+            font-style: italic;
+
+        }
+
+
+
+        /* Experience */
+
+        .experience-item {
+
+            margin-bottom: 25px;
+
+            padding-left: 20px;
+
+            border-left: 4px solid #764ba2;
+
+        }
+
+
+
+        .experience-item h3 {
+
+            font-size: 1.2em;
+
+            color: #333;
+
+            margin-bottom: 5px;
+
+        }
+
+
+
+        .experience-item p {
+
+            color: #555;
+
+            margin-bottom: 8px;
+
+            line-height: 1.6;
+
+        }
+
+
+
+        /* Skills Section */
+
+        .skills-category {
+
+            margin-bottom: 25px;
+
+        }
+
+
+
+        .skills-category h3 {
+
+            font-size: 1.1em;
+
+            color: #667eea;
+
+            margin-bottom: 12px;
+
+            font-weight: 600;
+
+        }
+
+
+
+        .skills-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+        }
+
+
+
+        .skill-tag {
+
+            background: #f0f4ff;
+
+            color: #667eea;
+
+            padding: 8px 15px;
+
+            border-radius: 25px;
+
+            font-size: 0.95em;
+
+            border: 1px solid #667eea;
+
+            font-weight: 500;
+
+        }
+
+
+
+        /* Certifications */
+
+        .cert-item {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            margin-bottom: 15px;
+
+            padding-left: 20px;
+
+            border-left: 4px solid #764ba2;
+
+        }
+
+
+
+        .cert-item::before {
+
+            content: "✓";
+
+            color: #764ba2;
+
+            font-weight: bold;
+
+            margin-left: -28px;
+
+            margin-right: 12px;
+
+            font-size: 1.3em;
+
+        }
+
+
+
+        .cert-item p {
+
+            color: #555;
+
+        }
+
+
+
+        /* Languages */
+
+        .languages {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            gap: 15px;
+
+        }
+
+
+
+        .language-item {
+
+            padding: 15px;
+
+            background: #f9f9f9;
+
+            border-radius: 6px;
+
+            border-left: 4px solid #667eea;
+
+            text-align: center;
+
+        }
+
+
+
+        .language-item p {
+
+            color: #333;
+
+            font-weight: 500;
+
+        }
+
+
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            header {
+
+                padding: 30px 20px;
+
+            }
+
+
+
+            header h1 {
+
+                font-size: 1.8em;
+
+            }
+
+
+
+            header .subtitle {
+
+                font-size: 1em;
+
+            }
+
+
+
+            .contact-info {
+
+                flex-direction: column;
+
+                gap: 12px;
+
+                justify-content: center;
+
+            }
+
+
+
+            main {
+
+                padding: 25px 20px;
+
+            }
+
+
+
+            section h2 {
+
+                font-size: 1.4em;
+
+                margin-bottom: 15px;
+
+            }
+
+
+
+            .skills-list {
+
+                flex-direction: column;
+
+                gap: 8px;
+
+            }
+
+
+
+            .skill-tag {
+
+                display: block;
+
+                text-align: center;
+
+            }
+
+        }
+
+
+
+        /* Print Styles */
+
+        @media print {
+
+            body {
+
+                background: white;
+
+                padding: 0;
+
+            }
+
+
+
+            .container {
+
+                box-shadow: none;
+
+                max-width: 100%;
+
+            }
+
+
+
+            header {
+
+                page-break-after: avoid;
+
+            }
+
+
+
+            section {
+
+                page-break-inside: avoid;
+
+                margin-bottom: 25px;
+
+            }
+
+        }
+    
